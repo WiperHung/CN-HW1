@@ -83,6 +83,7 @@ plt.ylabel("Queue Occupancy(Packets)")
 plt.grid(True)
 plt.xlabel("Time(Seconds)")
 plt.ylim([0,max(qlens)+5])
+plt.tight_layout()
 
 if args.out:
     print 'saving to', args.out
